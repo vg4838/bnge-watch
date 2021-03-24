@@ -52,16 +52,14 @@ const Header = () => {
         <div className="header-image">
           <img src={logo} alt="" />
         </div>
-        <div className={`${menuClass ? 'header-menu-toggle is-active' : 'header-menu-toggle'}`}
-         id='header-mobile-menu'
-          onClick={ () => toggleMenu()}>
+        <div className={`${menuClass ? 'header-menu-toggle is-active' : 'header-menu-toggle'}`} id="header-mobile-menu" onClick={() => toggleMenu()}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
         <ul className={`${navClass ? 'header-nav header-mobile-nav' : 'header-nav'}`}>
           {HEADER_LIST.map((data) => (
-            <li key={data.id} className= 'header-nav-item'>
+            <li key={data.id} className="header-nav-item">
               <span className="header-list-name">
                 <i className={data.iconClass}></i>
               </span>
