@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable multiline-ternary */
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -13,6 +15,7 @@ const Reviews = (props) => {
     <>
       <div className="movie-reviews">
         <div className="div-title">Reviews {reviews.results.length > 0 ? reviews.results.length : ''}</div>
+        // eslint-disable-next-line multiline-ternary
         {reviews.results.length ? (
           reviews.results.map((data) => (
             <div className="reviews" key={uuidv4()}>
